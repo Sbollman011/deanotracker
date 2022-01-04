@@ -226,7 +226,7 @@ const storage = getStorage(firebaseApp);
           tempPhotoDelete:"",
           tempMessagePhotoDelete:"",
           alertMilestone: false,
-          tempMilestoneDelete:"",
+          tempMilestoneDelete:-1,
           tempMessageMilestoneDelete:"",
 
 
@@ -304,12 +304,12 @@ const storage = getStorage(firebaseApp);
             if(this.alertMilestone == true){
                 this.alertMilestone = false;
                 this.tempMessageMilestoneDelete = "";
-                this.tempMilestoneDelete = "";
+                this.tempMilestoneDelete = -1;
             }
             else{
+               this.tempMessageMilestoneDelete = msg;
+                this.tempMilestoneDelete = item;
                 this.alertMilestone = true;
-                this.tempMessageMilestoneDelete = msg;
-                this.tempMilestonDelete = item;
             }
         },
         deleteMilestone(){
@@ -321,7 +321,7 @@ const storage = getStorage(firebaseApp);
             }
             this.tempMilestoneDelete = "";
             this.tempMessageMilestoneDelete ="";
-            this.toggleAlertMilestone();
+            this.alertMilestone = false;
             this.postToMilestoneDb();
         },
         createNewMilestone() {
