@@ -12,6 +12,8 @@
         <v-tabs
           v-model="tab"
           align-with-title
+          center-active
+          show-arrows
         >
           <v-tabs-slider color="yellow"></v-tabs-slider>
 
