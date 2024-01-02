@@ -1,0 +1,154 @@
+[debug] [2024-01-02T20:12:10.891Z] ----------------------------------------------------------------------
+[debug] [2024-01-02T20:12:10.894Z] Command:       /home/linuxbrew/.linuxbrew/Cellar/node/20.1.0/bin/node /home/linuxbrew/.linuxbrew/bin/firebase deploy
+[debug] [2024-01-02T20:12:10.894Z] CLI Version:   13.0.2
+[debug] [2024-01-02T20:12:10.894Z] Platform:      linux
+[debug] [2024-01-02T20:12:10.894Z] Node Version:  v20.1.0
+[debug] [2024-01-02T20:12:10.895Z] Time:          Tue Jan 02 2024 12:12:10 GMT-0800 (Pacific Standard Time)
+[debug] [2024-01-02T20:12:10.895Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-02T20:12:10.976Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-02T20:12:10.976Z] > authorizing via signed-in user (apocalypserocknshop@gmail.com)
+[debug] [2024-01-02T20:12:10.977Z] [iam] checking project deanotracker for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2024-01-02T20:12:10.979Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/deanotracker:testIamPermissions [none]
+[debug] [2024-01-02T20:12:10.979Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/deanotracker:testIamPermissions x-goog-quota-user=projects/deanotracker
+[debug] [2024-01-02T20:12:10.979Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/deanotracker:testIamPermissions {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2024-01-02T20:12:38.993Z] ----------------------------------------------------------------------
+[debug] [2024-01-02T20:12:38.996Z] Command:       /home/linuxbrew/.linuxbrew/Cellar/node/20.1.0/bin/node /home/linuxbrew/.linuxbrew/bin/firebase deploy
+[debug] [2024-01-02T20:12:38.996Z] CLI Version:   13.0.2
+[debug] [2024-01-02T20:12:38.996Z] Platform:      linux
+[debug] [2024-01-02T20:12:38.997Z] Node Version:  v20.1.0
+[debug] [2024-01-02T20:12:38.997Z] Time:          Tue Jan 02 2024 12:12:38 GMT-0800 (Pacific Standard Time)
+[debug] [2024-01-02T20:12:38.997Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-02T20:12:39.072Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-02T20:12:39.073Z] > authorizing via signed-in user (apocalypserocknshop@gmail.com)
+[debug] [2024-01-02T20:12:39.073Z] [iam] checking project deanotracker for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2024-01-02T20:12:39.075Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/deanotracker:testIamPermissions [none]
+[debug] [2024-01-02T20:12:39.076Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/deanotracker:testIamPermissions x-goog-quota-user=projects/deanotracker
+[debug] [2024-01-02T20:12:39.076Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/deanotracker:testIamPermissions {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2024-01-02T20:12:41.965Z] *** [apiv2] error from fetch(https://cloudresourcemanager.googleapis.com/v1/projects/deanotracker:testIamPermissions, {"headers":{},"method":"POST","body":"{\"permissions\":[\"firebase.projects.get\",\"firebasedatabase.instances.update\",\"firebasehosting.sites.update\",\"firebaserules.releases.create\",\"firebaserules.releases.update\",\"firebaserules.rulesets.create\"]}"}): FetchError: request to https://cloudresourcemanager.googleapis.com/v1/projects/deanotracker:testIamPermissions failed, reason: Socket connection timeout
+[debug] [2024-01-02T20:12:41.965Z] [iam] error while checking permissions, command may fail: FirebaseError: Failed to make request to https://cloudresourcemanager.googleapis.com/v1/projects/deanotracker:testIamPermissions
+[debug] [2024-01-02T20:12:41.966Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/deanotracker [none]
+[debug] [2024-01-02T20:12:42.658Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/deanotracker 200
+[debug] [2024-01-02T20:12:42.658Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/deanotracker {"projectId":"deanotracker","projectNumber":"947488263114","displayName":"deanotracker","name":"projects/deanotracker","resources":{"hostingSite":"deanotracker","realtimeDatabaseInstance":"deanotracker-default-rtdb","storageBucket":"deanotracker.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_4ce3ff15-0e7b-464e-984e-02f2c4149489"}
+[debug] [2024-01-02T20:12:42.658Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/deanotracker [none]
+[debug] [2024-01-02T20:12:42.872Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/deanotracker 200
+[debug] [2024-01-02T20:12:42.872Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/deanotracker {"projectId":"deanotracker","projectNumber":"947488263114","displayName":"deanotracker","name":"projects/deanotracker","resources":{"hostingSite":"deanotracker","realtimeDatabaseInstance":"deanotracker-default-rtdb","storageBucket":"deanotracker.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_4ce3ff15-0e7b-464e-984e-02f2c4149489"}
+[info] 
+[info] === Deploying to 'deanotracker'...
+[info] 
+[info] i  deploying database, storage, hosting 
+[info] i  database: checking rules syntax... 
+[debug] [2024-01-02T20:12:42.876Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/deanotracker/locations/-/instances/deanotracker-default-rtdb [none]
+[debug] [2024-01-02T20:12:46.383Z] *** [apiv2] error from fetch(https://firebasedatabase.googleapis.com/v1beta/projects/deanotracker/locations/-/instances/deanotracker-default-rtdb, {"headers":{},"method":"GET","signal":{}}): FetchError: request to https://firebasedatabase.googleapis.com/v1beta/projects/deanotracker/locations/-/instances/deanotracker-default-rtdb failed, reason: Socket connection timeout
+[debug] [2024-01-02T20:12:46.384Z] Failed to make request to https://firebasedatabase.googleapis.com/v1beta/projects/deanotracker/locations/-/instances/deanotracker-default-rtdb
+[debug] [2024-01-02T20:12:46.385Z] FirebaseError: Failed to make request to https://firebasedatabase.googleapis.com/v1beta/projects/deanotracker/locations/-/instances/deanotracker-default-rtdb
+    at RetryOperation._fn (/home/linuxbrew/.linuxbrew/lib/node_modules/firebase-tools/lib/apiv2.js:246:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get instance details for instance: deanotracker-default-rtdb. See firebase-debug.log for more details.
+[debug] [2024-01-02T20:12:51.052Z] ----------------------------------------------------------------------
+[debug] [2024-01-02T20:12:51.055Z] Command:       /home/linuxbrew/.linuxbrew/Cellar/node/20.1.0/bin/node /home/linuxbrew/.linuxbrew/bin/firebase deploy
+[debug] [2024-01-02T20:12:51.056Z] CLI Version:   13.0.2
+[debug] [2024-01-02T20:12:51.056Z] Platform:      linux
+[debug] [2024-01-02T20:12:51.057Z] Node Version:  v20.1.0
+[debug] [2024-01-02T20:12:51.057Z] Time:          Tue Jan 02 2024 12:12:51 GMT-0800 (Pacific Standard Time)
+[debug] [2024-01-02T20:12:51.057Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-02T20:12:51.154Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-02T20:12:51.154Z] > authorizing via signed-in user (apocalypserocknshop@gmail.com)
+[debug] [2024-01-02T20:12:51.154Z] [iam] checking project deanotracker for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2024-01-02T20:12:51.157Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/deanotracker:testIamPermissions [none]
+[debug] [2024-01-02T20:12:51.157Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/deanotracker:testIamPermissions x-goog-quota-user=projects/deanotracker
+[debug] [2024-01-02T20:12:51.157Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/deanotracker:testIamPermissions {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2024-01-02T20:12:54.047Z] *** [apiv2] error from fetch(https://cloudresourcemanager.googleapis.com/v1/projects/deanotracker:testIamPermissions, {"headers":{},"method":"POST","body":"{\"permissions\":[\"firebase.projects.get\",\"firebasedatabase.instances.update\",\"firebasehosting.sites.update\",\"firebaserules.releases.create\",\"firebaserules.releases.update\",\"firebaserules.rulesets.create\"]}"}): FetchError: request to https://cloudresourcemanager.googleapis.com/v1/projects/deanotracker:testIamPermissions failed, reason: Socket connection timeout
+[debug] [2024-01-02T20:12:54.047Z] [iam] error while checking permissions, command may fail: FirebaseError: Failed to make request to https://cloudresourcemanager.googleapis.com/v1/projects/deanotracker:testIamPermissions
+[debug] [2024-01-02T20:12:54.048Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/deanotracker [none]
+[debug] [2024-01-02T20:12:54.673Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/deanotracker 200
+[debug] [2024-01-02T20:12:54.674Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/deanotracker {"projectId":"deanotracker","projectNumber":"947488263114","displayName":"deanotracker","name":"projects/deanotracker","resources":{"hostingSite":"deanotracker","realtimeDatabaseInstance":"deanotracker-default-rtdb","storageBucket":"deanotracker.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_4ce3ff15-0e7b-464e-984e-02f2c4149489"}
+[debug] [2024-01-02T20:12:54.674Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/deanotracker [none]
+[debug] [2024-01-02T20:12:55.004Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/deanotracker 200
+[debug] [2024-01-02T20:12:55.004Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/deanotracker {"projectId":"deanotracker","projectNumber":"947488263114","displayName":"deanotracker","name":"projects/deanotracker","resources":{"hostingSite":"deanotracker","realtimeDatabaseInstance":"deanotracker-default-rtdb","storageBucket":"deanotracker.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_4ce3ff15-0e7b-464e-984e-02f2c4149489"}
+[info] 
+[info] === Deploying to 'deanotracker'...
+[info] 
+[info] i  deploying database, storage, hosting 
+[info] i  database: checking rules syntax... 
+[debug] [2024-01-02T20:12:55.007Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/deanotracker/locations/-/instances/deanotracker-default-rtdb [none]
+[debug] [2024-01-02T20:12:58.369Z] *** [apiv2] error from fetch(https://firebasedatabase.googleapis.com/v1beta/projects/deanotracker/locations/-/instances/deanotracker-default-rtdb, {"headers":{},"method":"GET","signal":{}}): FetchError: request to https://firebasedatabase.googleapis.com/v1beta/projects/deanotracker/locations/-/instances/deanotracker-default-rtdb failed, reason: Socket connection timeout
+[debug] [2024-01-02T20:12:58.369Z] Failed to make request to https://firebasedatabase.googleapis.com/v1beta/projects/deanotracker/locations/-/instances/deanotracker-default-rtdb
+[debug] [2024-01-02T20:12:58.370Z] FirebaseError: Failed to make request to https://firebasedatabase.googleapis.com/v1beta/projects/deanotracker/locations/-/instances/deanotracker-default-rtdb
+    at RetryOperation._fn (/home/linuxbrew/.linuxbrew/lib/node_modules/firebase-tools/lib/apiv2.js:246:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get instance details for instance: deanotracker-default-rtdb. See firebase-debug.log for more details.
+[debug] [2024-01-02T20:13:01.970Z] ----------------------------------------------------------------------
+[debug] [2024-01-02T20:13:01.973Z] Command:       /home/linuxbrew/.linuxbrew/Cellar/node/20.1.0/bin/node /home/linuxbrew/.linuxbrew/bin/firebase deploy
+[debug] [2024-01-02T20:13:01.973Z] CLI Version:   13.0.2
+[debug] [2024-01-02T20:13:01.974Z] Platform:      linux
+[debug] [2024-01-02T20:13:01.974Z] Node Version:  v20.1.0
+[debug] [2024-01-02T20:13:01.974Z] Time:          Tue Jan 02 2024 12:13:01 GMT-0800 (Pacific Standard Time)
+[debug] [2024-01-02T20:13:01.974Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-02T20:13:02.054Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-02T20:13:02.055Z] > authorizing via signed-in user (apocalypserocknshop@gmail.com)
+[debug] [2024-01-02T20:13:02.055Z] [iam] checking project deanotracker for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2024-01-02T20:13:02.057Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/deanotracker:testIamPermissions [none]
+[debug] [2024-01-02T20:13:02.057Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/deanotracker:testIamPermissions x-goog-quota-user=projects/deanotracker
+[debug] [2024-01-02T20:13:02.057Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/deanotracker:testIamPermissions {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2024-01-02T20:13:04.938Z] *** [apiv2] error from fetch(https://cloudresourcemanager.googleapis.com/v1/projects/deanotracker:testIamPermissions, {"headers":{},"method":"POST","body":"{\"permissions\":[\"firebase.projects.get\",\"firebasedatabase.instances.update\",\"firebasehosting.sites.update\",\"firebaserules.releases.create\",\"firebaserules.releases.update\",\"firebaserules.rulesets.create\"]}"}): FetchError: request to https://cloudresourcemanager.googleapis.com/v1/projects/deanotracker:testIamPermissions failed, reason: Socket connection timeout
+[debug] [2024-01-02T20:13:04.938Z] [iam] error while checking permissions, command may fail: FirebaseError: Failed to make request to https://cloudresourcemanager.googleapis.com/v1/projects/deanotracker:testIamPermissions
+[debug] [2024-01-02T20:13:04.939Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/deanotracker [none]
+[debug] [2024-01-02T20:13:05.596Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/deanotracker 200
+[debug] [2024-01-02T20:13:05.597Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/deanotracker {"projectId":"deanotracker","projectNumber":"947488263114","displayName":"deanotracker","name":"projects/deanotracker","resources":{"hostingSite":"deanotracker","realtimeDatabaseInstance":"deanotracker-default-rtdb","storageBucket":"deanotracker.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_4ce3ff15-0e7b-464e-984e-02f2c4149489"}
+[debug] [2024-01-02T20:13:05.597Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/deanotracker [none]
+[debug] [2024-01-02T20:13:05.871Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/deanotracker 200
+[debug] [2024-01-02T20:13:05.871Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/deanotracker {"projectId":"deanotracker","projectNumber":"947488263114","displayName":"deanotracker","name":"projects/deanotracker","resources":{"hostingSite":"deanotracker","realtimeDatabaseInstance":"deanotracker-default-rtdb","storageBucket":"deanotracker.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_4ce3ff15-0e7b-464e-984e-02f2c4149489"}
+[info] 
+[info] === Deploying to 'deanotracker'...
+[info] 
+[info] i  deploying database, storage, hosting 
+[info] i  database: checking rules syntax... 
+[debug] [2024-01-02T20:13:05.875Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/deanotracker/locations/-/instances/deanotracker-default-rtdb [none]
+[debug] [2024-01-02T20:13:09.256Z] *** [apiv2] error from fetch(https://firebasedatabase.googleapis.com/v1beta/projects/deanotracker/locations/-/instances/deanotracker-default-rtdb, {"headers":{},"method":"GET","signal":{}}): FetchError: request to https://firebasedatabase.googleapis.com/v1beta/projects/deanotracker/locations/-/instances/deanotracker-default-rtdb failed, reason: Socket connection timeout
+[debug] [2024-01-02T20:13:09.257Z] Failed to make request to https://firebasedatabase.googleapis.com/v1beta/projects/deanotracker/locations/-/instances/deanotracker-default-rtdb
+[debug] [2024-01-02T20:13:09.257Z] FirebaseError: Failed to make request to https://firebasedatabase.googleapis.com/v1beta/projects/deanotracker/locations/-/instances/deanotracker-default-rtdb
+    at RetryOperation._fn (/home/linuxbrew/.linuxbrew/lib/node_modules/firebase-tools/lib/apiv2.js:246:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get instance details for instance: deanotracker-default-rtdb. See firebase-debug.log for more details.
+[debug] [2024-01-02T20:13:17.792Z] ----------------------------------------------------------------------
+[debug] [2024-01-02T20:13:17.795Z] Command:       /home/linuxbrew/.linuxbrew/Cellar/node/20.1.0/bin/node /home/linuxbrew/.linuxbrew/bin/firebase deploy
+[debug] [2024-01-02T20:13:17.795Z] CLI Version:   13.0.2
+[debug] [2024-01-02T20:13:17.795Z] Platform:      linux
+[debug] [2024-01-02T20:13:17.795Z] Node Version:  v20.1.0
+[debug] [2024-01-02T20:13:17.796Z] Time:          Tue Jan 02 2024 12:13:17 GMT-0800 (Pacific Standard Time)
+[debug] [2024-01-02T20:13:17.796Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-02T20:13:17.876Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-02T20:13:17.877Z] > authorizing via signed-in user (apocalypserocknshop@gmail.com)
+[debug] [2024-01-02T20:13:17.877Z] [iam] checking project deanotracker for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2024-01-02T20:13:17.879Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/deanotracker:testIamPermissions [none]
+[debug] [2024-01-02T20:13:17.879Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/deanotracker:testIamPermissions x-goog-quota-user=projects/deanotracker
+[debug] [2024-01-02T20:13:17.879Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/deanotracker:testIamPermissions {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2024-01-02T20:13:20.760Z] *** [apiv2] error from fetch(https://cloudresourcemanager.googleapis.com/v1/projects/deanotracker:testIamPermissions, {"headers":{},"method":"POST","body":"{\"permissions\":[\"firebase.projects.get\",\"firebasedatabase.instances.update\",\"firebasehosting.sites.update\",\"firebaserules.releases.create\",\"firebaserules.releases.update\",\"firebaserules.rulesets.create\"]}"}): FetchError: request to https://cloudresourcemanager.googleapis.com/v1/projects/deanotracker:testIamPermissions failed, reason: Socket connection timeout
+[debug] [2024-01-02T20:13:20.761Z] [iam] error while checking permissions, command may fail: FirebaseError: Failed to make request to https://cloudresourcemanager.googleapis.com/v1/projects/deanotracker:testIamPermissions
+[debug] [2024-01-02T20:13:20.762Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/deanotracker [none]
+[debug] [2024-01-02T20:13:21.361Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/deanotracker 200
+[debug] [2024-01-02T20:13:21.361Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/deanotracker {"projectId":"deanotracker","projectNumber":"947488263114","displayName":"deanotracker","name":"projects/deanotracker","resources":{"hostingSite":"deanotracker","realtimeDatabaseInstance":"deanotracker-default-rtdb","storageBucket":"deanotracker.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_4ce3ff15-0e7b-464e-984e-02f2c4149489"}
+[debug] [2024-01-02T20:13:21.362Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/deanotracker [none]
+[debug] [2024-01-02T20:13:21.637Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/deanotracker 200
+[debug] [2024-01-02T20:13:21.638Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/deanotracker {"projectId":"deanotracker","projectNumber":"947488263114","displayName":"deanotracker","name":"projects/deanotracker","resources":{"hostingSite":"deanotracker","realtimeDatabaseInstance":"deanotracker-default-rtdb","storageBucket":"deanotracker.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_4ce3ff15-0e7b-464e-984e-02f2c4149489"}
+[info] 
+[info] === Deploying to 'deanotracker'...
+[info] 
+[info] i  deploying database, storage, hosting 
+[info] i  database: checking rules syntax... 
+[debug] [2024-01-02T20:13:21.641Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/deanotracker/locations/-/instances/deanotracker-default-rtdb [none]
+[debug] [2024-01-02T20:13:25.009Z] *** [apiv2] error from fetch(https://firebasedatabase.googleapis.com/v1beta/projects/deanotracker/locations/-/instances/deanotracker-default-rtdb, {"headers":{},"method":"GET","signal":{}}): FetchError: request to https://firebasedatabase.googleapis.com/v1beta/projects/deanotracker/locations/-/instances/deanotracker-default-rtdb failed, reason: Socket connection timeout
+[debug] [2024-01-02T20:13:25.009Z] Failed to make request to https://firebasedatabase.googleapis.com/v1beta/projects/deanotracker/locations/-/instances/deanotracker-default-rtdb
+[debug] [2024-01-02T20:13:25.010Z] FirebaseError: Failed to make request to https://firebasedatabase.googleapis.com/v1beta/projects/deanotracker/locations/-/instances/deanotracker-default-rtdb
+    at RetryOperation._fn (/home/linuxbrew/.linuxbrew/lib/node_modules/firebase-tools/lib/apiv2.js:246:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get instance details for instance: deanotracker-default-rtdb. See firebase-debug.log for more details.

@@ -60,7 +60,7 @@
                                 <div class="right">
                                 <v-btn @click="toggleEdit()">Edit</v-btn>
                                 </div>
-                                <v-carousel>
+                                <v-carousel hide-delimiters>
                                 <v-carousel-item
                                 v-for="(photo,j) in item.photos"
                                 :key="j"
@@ -178,10 +178,10 @@
 </template>
 
 <script>
-import deano from '../assets/logo.png'
+import deano from '../assets/logo.png';
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getStorage, ref,uploadBytes,getDownloadURL,deleteObject} from "firebase/storage";
+import { deleteObject, getDownloadURL, getStorage, ref, uploadBytes } from "firebase/storage";
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
